@@ -1,27 +1,22 @@
 import React from "react"
 import Buttons from "./Buttons.js";
-import Colors from "./Colors";
 
 
 
 class App extends React.Component {
     render() {
         return(
-            <div>
-                <Buttons />
-                <Buttons />
-                <Buttons />
-                <Buttons />
-                <Buttons />
+            <main>
+                <div>
+                <button className="btnDefault">Default</button>
+                <button className="btnDefault btnHover" type="button hover">Default</button>
             </div>
+            <div>
+                <button className="btnDefault btnOutline">Default</button>
+                <button className="btnDefault ">Default</button>
+            </div>
+            </main>
         )
-    }
-}
-
-
-class HoverButton extends React.Component {
-    render() {
-        <button></button>
     }
 }
 
