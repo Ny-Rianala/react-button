@@ -1,6 +1,5 @@
-.buttons {
+.btnDefault {
     display: inline-block;
-    background-color: #E0E0E0;
     border: none;
     text-align: center;
     color: #3F3F3F;
@@ -11,9 +10,15 @@
     padding-bottom: 8px;
     padding-top: 8px;
     margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 
-.button-hover:hover {
+.btnHover:hover {
     background: #AEAEAE;
+}
+
+
+.btnOutline {
+    color: blue;
 }
