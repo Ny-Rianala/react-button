@@ -8,13 +8,13 @@ class App extends React.Component {
         return(
             <main>
                 <div>
-                <button className="btnDefault">Default</button>
-                <button className="btnDefault btnHover" type="button hover">Default</button>
-            </div>
-            <div>
-                <button className="btnDefault btnOutline">Default</button>
-                <button className="btnDefault ">Default</button>
-            </div>
+                  <button className="btnDefault">Default</button>
+                  <button className="btnDefault btnHover" type="button hover">Default</button>
+                </div>
+                <div>
+                  <button className="btnDefault btnOutline">Default</button>
+                  <button className="btnDefault ">Default</button>
+                </div>
             </main>
         )
     }
