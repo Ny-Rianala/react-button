@@ -13,11 +13,27 @@ button {
 }
 
 .sm {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     border-radius: 10px;
+}
+
+.md {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    border-radius: 10px;
+}
+
+.lg {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    border-radius: 10px; 
 }
 
 .hover:hover {
@@ -62,9 +78,57 @@ button {
     background-color: #E0E0E0;
     color: #9E9E9E;
 }
-
+ 
 .Disable:hover {
     cursor: pointer;
     display: inline-block;
     background-color: inherit;
+} 
+
+.withIcon {
+    background:  #2962FF;
+    color: white;
+}
+
+.default {
+    color:#3F3F3F;
+}
+
+.AllSize {
+    background-color: #2962FF;
+    color: white;
+}
+
+.secondary {
+    background-color: #455A64;
+    color: white;
+}
+
+.danger {
+    background-color: #D32F2F;
+}
+
+
+.hover-focus:focus {
+    background-color: #AEAEAE;
+}
+
+.hover-focus:hover {
+    background-color: #AEAEAE;
+    color: #3F3F3F;
+}
+ 
+.darkbluebutton {
+    background-color: #0039CB;
+    color: white;
+}
+
+.darkSecondary {
+    background-color: #1C313A;
+    color: white;
+} 
+
+.darkRedDanger {
+    background-color: #9A0007;
+    color: white;
 }
