@@ -1,7 +1,7 @@
 import React from "react"
 import Buttons from "./Buttons.js";
 import "./index.css";
-
+import images from "./images/cart.png";
 
 
 class App extends React.Component {
@@ -35,40 +35,42 @@ class App extends React.Component {
                   <Buttons
                       variant="text Disable"
                       size="sm"
-                      disable="true"  
+                      disable 
                  >
-                    Default
+                    Disable
                   </Buttons>
                   <Buttons
-                      variant="withIcon iconStart"
+                      StartIcon="local_grocery_store"
                       size="lg"
-                      
-                 >
+                      image="" 
+                 >  
                     Default
+                    
+                    
                   </Buttons>
                   <Buttons
-                      variant="withIcon iconEnd"
+                      StartIcon="local_grocery_store"
                       size="lg"
                     
                  >
                     Default
                   </Buttons>
                   <Buttons
-                      variant="AllSize"
+                      variant="AllButtonSizes"
                       size="sm"
                     
                  >
                     Default
                   </Buttons>
                   <Buttons
-                      variant="AllSize"
+                      variant="AllButtonSizes"
                       size="md"
                     
                  >
                     Default
                   </Buttons>
                   <Buttons
-                      variant="AllSize"
+                      variant="AllButtonSizes"
                       size="lg"
                     
                  >
@@ -81,9 +83,8 @@ class App extends React.Component {
                     Default
                   </Buttons>
                   <Buttons
-                      variant="AllSize"
+                      variant="primary"
                       size="md"
-                    
                  >
                     Default
                   </Buttons>
@@ -97,33 +98,8 @@ class App extends React.Component {
                   <Buttons
                       variant="danger"
                       size="md"
-                    
                  >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="hover-focus"
-                      size="md"   
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="darkbluebutton"
-                      size="md"   
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="darkSecondary"
-                      size="lg"   
-                 >
-                    Secondary
-                  </Buttons>
-                  <Buttons
-                      variant="darkRedDanger"
-                      size="md"   
-                 >
-                    Default
+                    Danger
                   </Buttons>
                 </div>
             </main>
