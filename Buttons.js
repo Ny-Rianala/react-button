@@ -11,6 +11,8 @@ function Buttons(props) {
                     ${props.variant ? props.variant : ""}
                     ${props.size ? props.size : ""}
                     ${props.disable ? props.disable : ""}
+                    ${props.StartIcon ? props.StartIcon: ""}
+                    ${props.image ? props.image : ""}
                     `}
              >
                 {props.children}
