@@ -1,24 +1,70 @@
-.btnDefault {
+button {
     display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     border: none;
     text-align: center;
     color: #3F3F3F;
-    font-size: 14px;
-    font-weight: 500;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    border-radius: 20%;
     margin-bottom: 1rem;
     margin-left: 2rem;
+    
 }
 
-
-.btnHover:hover {
-    background: #AEAEAE;
+.sm {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-radius: 10px;
 }
 
+.hover:hover {
+    background-color: #AEAEAE;
+    color: darkgray;
+    font-weight: 500;
+    color: black;
+}
 
-.btnOutline {
-    color: blue;
+.outline {
+    border: solid blue;
+    border-radius: 10px;
+    color: #3D5AFE;
+}
+
+.outline:hover {
+    background-color: #809ce9;
+    color: #3D5AFE;
+}
+
+.text {
+    color: #3D5AFE;
+    cursor: pointer;
+    display: inline-block;
+    background-color: inherit;
+}
+
+.text:hover {
+    background-color: #aabbe9;
+}
+
+.DisableShadow {
+    background-color: #3D5AFE;
+    color: white;
+}
+
+.DisableShadow:focus {
+    box-shadow: none;
+}
+
+.Disable {
+    background-color: #E0E0E0;
+    color: #9E9E9E;
+}
+
+.Disable:hover {
+    cursor: pointer;
+    display: inline-block;
+    background-color: inherit;
 }
