@@ -33,13 +33,98 @@ class App extends React.Component {
                     Default
                   </Buttons>
                   <Buttons
-                      variant="text disable"
+                      variant="text Disable"
                       size="sm"
-                      disable="true"
+                      disable="true"  
                  >
                     Default
                   </Buttons>
-                  
+                  <Buttons
+                      variant="withIcon iconStart"
+                      size="lg"
+                      
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="withIcon iconEnd"
+                      size="lg"
+                    
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="AllSize"
+                      size="sm"
+                    
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="AllSize"
+                      size="md"
+                    
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="AllSize"
+                      size="lg"
+                    
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="default"
+                      size="md"
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="AllSize"
+                      size="md"
+                    
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="secondary"
+                      size="lg"
+                    
+                 >
+                    Secondary
+                  </Buttons>
+                  <Buttons
+                      variant="danger"
+                      size="md"
+                    
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="hover-focus"
+                      size="md"   
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="darkbluebutton"
+                      size="md"   
+                 >
+                    Default
+                  </Buttons>
+                  <Buttons
+                      variant="darkSecondary"
+                      size="lg"   
+                 >
+                    Secondary
+                  </Buttons>
+                  <Buttons
+                      variant="darkRedDanger"
+                      size="md"   
+                 >
+                    Default
+                  </Buttons>
                 </div>
             </main>
         )
