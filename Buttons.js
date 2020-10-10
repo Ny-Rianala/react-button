@@ -7,7 +7,11 @@ function Buttons(props) {
         <div>
              <button 
                 className= 
-                    {props.variant ? {backgroundColor: "blue"} : ""}
+                    {`
+                    ${props.variant ? props.variant : ""}
+                    ${props.size ? props.size : ""}
+                    ${props.disable ? props.disable : ""}
+                    `}
              >
                 {props.children}
             </button>
