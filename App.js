@@ -1,5 +1,6 @@
 import React from "react"
 import Buttons from "./Buttons.js";
+import "./index.css";
 
 
 
@@ -9,7 +10,8 @@ class App extends React.Component {
             <main>
                 <div>
                   <Buttons
-                        size="sm"
+                      variant="hover"
+                      size="sm"
                   >
                     Default
                   </Buttons>
@@ -30,10 +32,14 @@ class App extends React.Component {
                  >
                     Default
                   </Buttons>
-                  <Buttons 
+                  <Buttons
+                      variant="text disable"
+                      size="sm"
+                      disable="true"
                  >
                     Default
                   </Buttons>
+                  
                 </div>
             </main>
         )
