@@ -41,18 +41,33 @@ button {
     color: darkgray;
     font-weight: 500;
     color: black;
+    box-shadow: 2px 1px 10px darkgrey;
+}
+
+.hover:focus {
+    background-color: #AEAEAE;
+    color: darkgray;
+    font-weight: 500;
+    color: black;
+    outline: none;
 }
 
 .outline {
-    border: solid blue;
+    border: 1px solid blue;
     border-radius: 10px;
     color: #3D5AFE;
 }
 
 .outline:hover {
+    background-color: #ccd9fa;
+    color: #3D5AFE;
+}
+
+.outline:focus {
     background-color: #809ce9;
     color: #3D5AFE;
 }
+
 
 .text {
     color: #3D5AFE;
@@ -85,7 +100,7 @@ button {
     background-color: inherit;
 } 
 
-.withIcon {
+.local_grocery_store {
     background:  #2962FF;
     color: white;
 }
@@ -94,7 +109,31 @@ button {
     color:#3F3F3F;
 }
 
-.AllSize {
+
+.default:hover {
+    background-color:  #AEAEAE;
+}
+
+
+.default:focus {
+    background-color: #AEAEAE;
+}
+
+.primary {
+    background-color: #2962FF;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #0039CB;
+}
+
+
+.primary:focus {
+    background-color: #0039CB;
+}
+
+.AllButtonSizes {
     background-color: #2962FF;
     color: white;
 }
@@ -104,10 +143,33 @@ button {
     color: white;
 }
 
-.danger {
-    background-color: #D32F2F;
+.secondary:hover {
+    background-color: #455A64;
+    color: white;
 }
 
+
+.secondary:focus {
+    background-color: #455A64;
+    color: white;
+}
+
+.danger {
+    background-color: #D32F2F;
+    color: white;
+}
+
+
+.danger:hover {
+    background-color: #9A0007;
+    color: white;
+}
+
+
+.danger:focus {
+    background-color: #9A0007;
+    color: white;
+}
 
 .hover-focus:focus {
     background-color: #AEAEAE;
@@ -127,8 +189,3 @@ button {
     background-color: #1C313A;
     color: white;
 } 
-
-.darkRedDanger {
-    background-color: #9A0007;
-    color: white;
-}
