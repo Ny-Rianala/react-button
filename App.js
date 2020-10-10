@@ -19,13 +19,14 @@ class App extends React.Component {
                       variant="outline"
                       size="sm" 
                   >
-                    Default</Buttons>
+                    Default
+                  </Buttons>
                   <Buttons 
                       variant="text"
                       size="sm" 
                  >
                     Default
-                        </Buttons>
+                  </Buttons>
                   <Buttons
                       variant="DisableShadow"
                       size="sm" 
@@ -46,7 +47,6 @@ class App extends React.Component {
                  >  
                     Default
                     
-                    
                   </Buttons>
                   <Buttons
                       StartIcon="local_grocery_store"
@@ -57,15 +57,13 @@ class App extends React.Component {
                   </Buttons>
                   <Buttons
                       variant="AllButtonSizes"
-                      size="sm"
-                    
+                      size="sm"  
                  >
                     Default
                   </Buttons>
                   <Buttons
                       variant="AllButtonSizes"
                       size="md"
-                    
                  >
                     Default
                   </Buttons>
