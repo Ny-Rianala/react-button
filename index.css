@@ -89,21 +89,30 @@ button {
     box-shadow: none;
 }
 
-.Disable {
+.Disable:disabled {
     background-color: #E0E0E0;
     color: #9E9E9E;
 }
- 
-.Disable:hover {
-    cursor: pointer;
-    display: inline-block;
-    background-color: inherit;
-} 
 
 .local_grocery_store {
-    background:  #2962FF;
-    color: white;
+  background:  #2962FF;
+  color: white;
 }
+ 
+.local_grocery_store::before {
+    content: url("./images/add_shopping_cart-24px.svg");
+    width: 10px;
+    height: 10px;
+    padding-right: 1.5rem;
+}
+
+.local_grocery_store::after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding-right: 1.5rem;
+}
+
 
 .default {
     color:#3F3F3F;
@@ -144,13 +153,13 @@ button {
 }
 
 .secondary:hover {
-    background-color: #455A64;
+    background-color: #1C313A;
     color: white;
 }
 
 
 .secondary:focus {
-    background-color: #455A64;
+    background-color: #1C313A;
     color: white;
 }
 

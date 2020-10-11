@@ -1,7 +1,7 @@
 import React from "react"
 import Buttons from "./Buttons.js";
 import "./index.css";
-import images from "./images/cart.png";
+
 
 
 class App extends React.Component {
@@ -34,7 +34,7 @@ class App extends React.Component {
                     Default
                   </Buttons>
                   <Buttons
-                      variant="text Disable"
+                      variant="Disable"
                       size="sm"
                       disable 
                  >
@@ -42,8 +42,7 @@ class App extends React.Component {
                   </Buttons>
                   <Buttons
                       StartIcon="local_grocery_store"
-                      size="lg"
-                      image="" 
+                      size="lg" 
                  >  
                     Default
                     

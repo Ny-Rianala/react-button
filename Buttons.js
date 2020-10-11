@@ -11,8 +11,7 @@ function Buttons(props) {
                     ${props.variant ? props.variant : ""}
                     ${props.size ? props.size : ""}
                     ${props.disable ? props.disable : ""}
-                    ${props.StartIcon ? props.StartIcon: ""}
-                    ${props.image ? props.image : ""}
+                    ${props.StartIcon ? props.StartIcon : ""}        
                     `}
              >
                 {props.children}
@@ -20,8 +19,6 @@ function Buttons(props) {
         </div>        
     );
 }
-
-
 
 
 export default Buttons;
