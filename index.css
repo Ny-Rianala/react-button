@@ -107,7 +107,8 @@ button {
 }
 
 .local_grocery_store::after {
-    display: block;
+    content: url("./images/add_shopping_cart-24px.svg");
+    /* display: block; */
     width: 10px;
     height: 10px;
     padding-right: 1.5rem;
@@ -198,3 +199,10 @@ button {
     background-color: #1C313A;
     color: white;
 } 
+
+
+.multi-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}

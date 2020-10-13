@@ -11,8 +11,8 @@ class App extends React.Component {
                 <div>
                   <Buttons
                       variant="hover"
-                      size="sm"
-                  >
+                      size="sm"   
+                  >  
                     Default
                   </Buttons>
                   <Buttons
@@ -40,64 +40,70 @@ class App extends React.Component {
                  >
                     Disable
                   </Buttons>
-                  <Buttons
-                      StartIcon="local_grocery_store"
-                      size="lg" 
-                 >  
-                    Default
-                    
-                  </Buttons>
-                  <Buttons
-                      StartIcon="local_grocery_store"
-                      size="lg"
-                    
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="AllButtonSizes"
-                      size="sm"  
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="AllButtonSizes"
-                      size="md"
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="AllButtonSizes"
-                      size="lg"
-                    
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="default"
-                      size="md"
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="primary"
-                      size="md"
-                 >
-                    Default
-                  </Buttons>
-                  <Buttons
-                      variant="secondary"
-                      size="lg"
-                    
-                 >
-                    Secondary
-                  </Buttons>
-                  <Buttons
-                      variant="danger"
-                      size="md"
-                 >
-                    Danger
-                  </Buttons>
+                  <div className="multi-buttons">
+                      <Buttons
+                          StartIcon="local_grocery_store"
+                          size="lg" 
+                    >  
+                        Default
+                        
+                      </Buttons>
+                      <Buttons
+                          StartIcon="local_grocery_store"
+                          size="lg"
+                        
+                    >
+                        Default
+                      </Buttons>
+                  </div>
+                  <div className="multi-buttons">
+                      <Buttons
+                          variant="AllButtonSizes"
+                          size="sm"  
+                    >
+                        Default
+                      </Buttons>
+                      <Buttons
+                          variant="AllButtonSizes"
+                          size="md"
+                    >
+                        Default
+                      </Buttons>
+                      <Buttons
+                          variant="AllButtonSizes"
+                          size="lg"
+                        
+                    >
+                        Default
+                      </Buttons>
+                  </div>
+                    <div className="multi-buttons">
+                        <Buttons
+                        variant="default"
+                        size="md"
+                        >
+                          Default
+                        </Buttons>
+                        <Buttons
+                            variant="primary"
+                            size="md"
+                        >
+                          Default
+                        </Buttons>
+                        <Buttons
+                            variant="secondary"
+                            size="lg"
+                          
+                        >
+                          Secondary
+                        </Buttons>
+                        <Buttons
+                            variant="danger"
+                            size="md"
+                        >
+                          Danger
+                        </Buttons>
+                  </div>
                 </div>
             </main>
         )
