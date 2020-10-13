@@ -28298,36 +28298,87 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Buttons(props) {
+  console.log(props);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-    className: "buttons",
-    onClick: props.handleClick
-  }, "Default"));
+    className: "\n                    ".concat(props.variant ? props.variant : "", "\n                    ").concat(props.size ? props.size : "", "\n                    ").concat(props.disable ? props.disable : "", "\n                    ").concat(props.StartIcon ? props.StartIcon : "", "  \n                    ")
+  }, props.children));
 }
 
 var _default = Buttons;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"Colors.js":[function(require,module,exports) {
-"use strict";
+},{"react":"node_modules/react/index.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
 
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Colors(props) {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-    className: "button-hover",
-    onClick: props.handleClick
-  }, "Default"));
+  return bundleURL;
 }
 
-var _default = Colors;
-exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"index.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./images\\add_shopping_cart-24px.svg":[["add_shopping_cart-24px.7c25e1b4.svg","images/add_shopping_cart-24px.svg"],"images/add_shopping_cart-24px.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28339,7 +28390,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Buttons = _interopRequireDefault(require("./Buttons.js"));
 
-var _Colors = _interopRequireDefault(require("./Colors"));
+require("./index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28379,38 +28430,65 @@ var App = /*#__PURE__*/function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Buttons.default, null), /*#__PURE__*/_react.default.createElement(_Buttons.default, null), /*#__PURE__*/_react.default.createElement(_Buttons.default, null), /*#__PURE__*/_react.default.createElement(_Buttons.default, null), /*#__PURE__*/_react.default.createElement(_Buttons.default, null));
+      return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("div", null, "<Buttons/>", /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "hover",
+        size: "sm"
+      }, "Default"), "<Buttons variant:\"outline\"/>", /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "outline",
+        size: "sm"
+      }, "Default"), "<Buttons variant:\"text\"/>", /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "text",
+        size: "sm"
+      }, "Default"), "<Buttons variant:\"DisableShadow\"/>", /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "DisableShadow",
+        size: "sm"
+      }, "Default"), "<Buttons variant=\"Disable\"/>", /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "Disable",
+        size: "sm",
+        disable: true
+      }, "Disable"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "multi-buttons"
+      }, /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        StartIcon: "local_grocery_store",
+        size: "lg"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        StartIcon: "local_grocery_store",
+        size: "lg"
+      }, "Default")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "multi-buttons"
+      }, /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "AllButtonSizes",
+        size: "sm"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "AllButtonSizes",
+        size: "md"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "AllButtonSizes",
+        size: "lg"
+      }, "Default")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "multi-buttons"
+      }, /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "default",
+        size: "md"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "primary",
+        size: "md"
+      }, "Default"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "secondary",
+        size: "lg"
+      }, "Secondary"), /*#__PURE__*/_react.default.createElement(_Buttons.default, {
+        variant: "danger",
+        size: "md"
+      }, "Danger"))));
     }
   }]);
 
   return App;
 }(_react.default.Component);
 
-var HoverButton = /*#__PURE__*/function (_React$Component2) {
-  _inherits(HoverButton, _React$Component2);
-
-  var _super2 = _createSuper(HoverButton);
-
-  function HoverButton() {
-    _classCallCheck(this, HoverButton);
-
-    return _super2.apply(this, arguments);
-  }
-
-  _createClass(HoverButton, [{
-    key: "render",
-    value: function render() {
-      /*#__PURE__*/
-      _react.default.createElement("button", null);
-    }
-  }]);
-
-  return HoverButton;
-}(_react.default.Component);
-
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./Buttons.js":"Buttons.js","./Colors":"Colors.js"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Buttons.js":"Buttons.js","./index.css":"index.css"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28450,7 +28528,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55295" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61393" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
