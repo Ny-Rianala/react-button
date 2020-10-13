@@ -33,10 +33,20 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
--   Where can I see your demo?
--   What was your experience?
--   What have you learned/improved?
--   Your wisdom? :)
+1 -   Where can I see your demo?   
+    In this project, I have coverered some buttons style with component. There are 8 types of buttons:
+- In the first line, we can see default button and then when it is mouse hover.  
+ - In the second line, it is an ouline style button and when it is mouse hover.
+ - We also have text button. Then, when it is mouse hover.
+ - There is a disabledShadow button which has no shadow in it.  
+ - After that, we also have multiple buttons. There are three of them. They are small, medium and large size.  
+- In the last line, there are four different kinds of buttons: the first two rows have the same size but their colors are different. The last two rows represent secondary and danger buttons. Also, when you mouse hover on all of them, the colors will be lighter. 
+ 
+
+2 -   What was your experience?  
+3 -   What have you learned/improved?  
+   During this project, I have learned how use className attribute. I mean to differ className and className attributes.  
+4 -   Your wisdom? :)  
 
 ### Built With
 
