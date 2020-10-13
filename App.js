@@ -9,30 +9,35 @@ class App extends React.Component {
         return(
             <main>
                 <div>
+                  {`<Buttons/>`}
                   <Buttons
                       variant="hover"
                       size="sm"   
                   >  
                     Default
                   </Buttons>
+                  {`<Buttons variant:"outline"/>`}
                   <Buttons
                       variant="outline"
                       size="sm" 
                   >
                     Default
                   </Buttons>
+                  {`<Buttons variant:"text"/>`}
                   <Buttons 
                       variant="text"
                       size="sm" 
                  >
                     Default
                   </Buttons>
+                  {`<Buttons variant:"DisableShadow"/>`}
                   <Buttons
                       variant="DisableShadow"
                       size="sm" 
                  >
                     Default
                   </Buttons>
+                  {`<Buttons variant="Disable"/>`}
                   <Buttons
                       variant="Disable"
                       size="sm"
@@ -46,12 +51,10 @@ class App extends React.Component {
                           size="lg" 
                     >  
                         Default
-                        
                       </Buttons>
                       <Buttons
                           StartIcon="local_grocery_store"
                           size="lg"
-                        
                     >
                         Default
                       </Buttons>
